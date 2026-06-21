@@ -73,7 +73,6 @@ public class Kop {
     public Tree file(Path regularFile) throws IOException {
         byte[] magic = new byte[512];
         List<Path> deleteFiles = new LinkedList<>();
-//        List<Path> deleteDirs = new LinkedList<>();
         Tree tree = new Tree();
         tree.name = regularFile.getName(regularFile.getNameCount() - 1).toString();
         tree.size = Files.size(regularFile);

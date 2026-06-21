@@ -35,15 +35,6 @@ dependencies {
 }
 
 tasks.jar {
-//    from("src/main") {
-//        into("src")
-//    }
-//    from("build.gradle.kts") {
-//        into("src")
-//    }
-//    from("settings.gradle.kts") {
-//        into("src")
-//    }
     manifest {
         attributes["Implementation-Version"] = version
         attributes["Main-Class"] = "io.rsug.kopalka.Main"

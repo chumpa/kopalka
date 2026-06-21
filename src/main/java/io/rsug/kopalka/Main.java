@@ -26,5 +26,6 @@ public class Main {
             }
         }
         kop.wipe();
+        System.out.println("Копалка всё выкопала");
     }
 }

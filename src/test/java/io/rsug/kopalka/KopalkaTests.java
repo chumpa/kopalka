@@ -9,9 +9,7 @@ import java.nio.file.Paths;
 import java.util.Map;
 
 public class KopalkaTests {
-
     void rec(int deep, Tree parent) {
-//        System.out.printf("%s\\%s\n", "-".repeat(deep), parent.name);
         for (Map.Entry<String, Tree> sub: parent.children.entrySet()) {
             System.out.printf("%s/%s\n", "-".repeat(deep+1), sub.getKey());
             rec(deep+1, sub.getValue());
